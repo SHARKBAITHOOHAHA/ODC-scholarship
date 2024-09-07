@@ -1,32 +1,42 @@
+body{
+        background-image: url(./Images/Space.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
 .container{
     position: relative;
     width: 100%;
-    height: 95vh;
-    background-image: url(./Images/Space.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
 }
 
 .chickenContainer{
     display: flex;
     justify-content: center;
-    border-bottom: 10px solid black;
+    flex-wrap: wrap;
     width: 100%;
     height: 60%;
     align-items: center;
-    flex-wrap: wrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    
 }
 .chicken{
     width: 100px;
     height: 100px;
+    overflow: hidden;
+    object-fit: cover;
 
 }
 
-.bullet{
-    position:absolute;
+
+.bullet {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transform: scale(0.3);
+    left: 50%;
+    transform: translateX(-50%) scale(0.3);  
 }
 
 .rocket {
