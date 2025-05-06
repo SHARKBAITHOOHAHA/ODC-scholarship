@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  background-color: #ad343e;
+}
+.phone {
+  color: #ad343e;
+}
+
+.contact-section {
+  background-color: #f9f9f7;
+  padding: 50px 0;
+}

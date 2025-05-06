@@ -1,0 +1,70 @@
+/*********** best food section  ***********/
+.break {
+  background-color: #f9f9f7;
+  padding: 20px 0;
+}
+
+.best-food {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  color: #2c2f24;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h1 {
+  font-family: "Playfair Display";
+
+  font-size: 6vw;
+}
+
+.container p {
+  padding: 10px;
+  color: #000;
+}
+
+.best-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 24px;
+}
+
+.book-btn {
+  padding: 20px 32px;
+  background-color: #ad343e;
+  border: 1px solid #ad343e;
+  color: #fff;
+  border-radius: 118px;
+  cursor: pointer;
+}
+
+.explore-btn {
+  padding: 20px 32px;
+  background-color: transparent;
+  border: 1px solid #182226;
+  color: #182226;
+  border-radius: 118px;
+  cursor: pointer;
+}
+
+.explore-btn:hover {
+  background-color: #182226;
+  transition: 0.3s;
+  color: #fff;
+}

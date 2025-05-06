@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.btn {
+  background-color: #ad343e;
+}
+
+.section-book {
+  background-color: #f9f9f7;
+}

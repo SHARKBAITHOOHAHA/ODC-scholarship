@@ -1,0 +1,81 @@
+<section class="font-main bg-white text-center">
+  <div class="p-40 flex flex-col gap-20">
+    <div class="flex flex-col justify-center items-center gap-12">
+      <div class="flex flex-col justify-center items-center gap-5 w-1/2">
+        <h1 class="font-sec text-8xl text-mainTextThird">Our Menu</h1>
+        <p class="text-lg pColor">
+          We consider all the drivers of change gives you the components you
+          need to change to create a truly happens.
+        </p>
+      </div>
+      <nav class="flex flex-row justify-center items-start gap-4">
+        <button
+          class="h-12 w-32 rounded-full border text-mainTextThird font-bold"
+          routerLinkActive="active"
+          routerLink="./"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          All
+        </button>
+        <button
+          class="h-12 w-36 rounded-full border text-mainTextThird font-bold"
+          routerLinkActive="active"
+          routerLink="./"
+          [queryParams]="{ category: 'breakfast' }"
+        >
+          Breakfast
+        </button>
+        <button
+          class="h-12 w-36 rounded-full border text-mainTextThird font-bold"
+          routerLinkActive="active"
+          routerLink="./"
+          [queryParams]="{ category: 'mainDishes' }"
+        >
+          Main Dishes
+        </button>
+        <button
+          class="h-12 w-36 rounded-full border text-mainTextThird font-bold"
+          routerLinkActive="active"
+          routerLink="./"
+          [queryParams]="{ category: 'drinks' }"
+        >
+          Drinks
+        </button>
+        <button
+          class="h-12 w-36 rounded-full border text-mainTextThird font-bold"
+          routerLinkActive="active"
+          routerLink="./"
+          [queryParams]="{ category: 'desserts' }"
+        >
+          Desserts
+        </button>
+      </nav>
+    </div>
+    <div class="grid grid-cols-4 gap-6">
+      @for (product of products; track product.id;) {
+      <div
+        class="rounded-xl border h-[428] hover:shadow-lg hover:transition-transform hover:cursor-pointer relative"
+      >
+        <a routerLink="/menu/{{ product.id }}" class="block"
+          ><img
+            class="h-56 rounded-t-xl m-auto rounded"
+            src="{{ product.image }}"
+            alt="product.name"
+          />
+          <div class="flex flex-col justify-center items-center gap-2 p-4">
+            <h2 class="font-bold text-2xl text-mainText">
+              ${{ product.price }}
+            </h2>
+            <p class="text-xl text-mainTextThird font-bold line-clamp-3">
+              {{ product.title }}
+            </p>
+            <p class="pColor bottom-0 line-clamp-2">
+              {{ product.description }}
+            </p>
+          </div></a
+        >
+      </div>
+      }
+    </div>
+  </div>
+</section>

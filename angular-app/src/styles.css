@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, sans-serif; /* Default font-family */
+  line-height: 1.6; /* Default line-height */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ddd; /* Light border for table cells */
+  padding: 8px; /* Cell padding */
+  text-align: left; /* Align text to the left */
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: 100%;
+}

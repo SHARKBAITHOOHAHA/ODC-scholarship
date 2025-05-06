@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  background-color: #ad343e;
+  color: #ffffff;
+  border: none;
+}
+
+.pColor {
+  color: #495460;
+}
